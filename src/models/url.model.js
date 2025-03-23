@@ -16,6 +16,11 @@ const urlModel = new Schema
             required:true,
             unique:true,
             trim:true,
+        },
+        accessCount:
+        {
+            type:Number,
+            default:0,
         }
     },{timestamps:true}
 )

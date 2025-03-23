@@ -1,6 +1,6 @@
 class ApiError extends Error
 {
-    constructor(statusCode,message='Server is not working',errors = [],stack)
+    constructor(statusCode = 400,message='Server is not working',errors = [],stack)
     {
         super(message);
         this.statusCode = statusCode
